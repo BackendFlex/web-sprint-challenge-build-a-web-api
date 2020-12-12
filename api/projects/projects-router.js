@@ -3,8 +3,8 @@
 const express = require("express");
 const router = express.Router();
 
-const actionDb = require("../helpers/actionModel");
-const db = require("../helpers/projectModel");
+const actionDb = require("../actions/actions-model");
+const db = require("./projects-model");
 const { route } = require("../")
 
 // const {validateActionId, validateActionCreation, validationProjectIDForAction} = require("./validations")

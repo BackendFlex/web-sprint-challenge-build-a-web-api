@@ -1,11 +1,11 @@
 // Write your "actions" router here!
 
-const express = reqire("express")
+const express = require("express")
 const router = express.Router();
 
-const projectDb = require("../helpers/projectModel");
-const db = require("../helpers/actionModel");
-const { route } = require("../middleware/projectRoute");
+const projectDb = require("../projects/projects-model");
+const db = require("./actions-model");
+const { route } = require("../projects/projects-router");
 
 // const {validateActionId, validateActionCreation, validationProjectIDForAction} = require("./validations")
 
