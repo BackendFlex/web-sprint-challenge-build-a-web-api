@@ -7,8 +7,6 @@ const actionDb = require("../actions/actions-model");
 const db = require("./projects-model");
 const { route } = require("../")
 
-// const {validateActionId, validateActionCreation, validationProjectIDForAction} = require("./validations")
-
 
 router.get("/", (req,res) => {
     db.get()

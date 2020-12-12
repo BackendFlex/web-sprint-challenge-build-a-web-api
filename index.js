@@ -19,11 +19,11 @@ const port = process.env.PORT || 4000
 
 server.use(express.json());
 
-const projectRoute = require('./data/middleware/projectRoute')
-const actionRoute = require('./data/middleware/actionRoute')
+const projectRouter = require('./api/projects/projects-router')
+const actionRouter = require('./api/actions/actions-router')
 
-server.use('/data','/middleware',projectRoute)
-server.use('/data','/middleware',actionRoute)
+server.use('/api','/projects',projectRouter)
+server.use('/api','/actions',actionRouter)
 
 server.listen(port, () => {
     console.log(`Server running at http://localhost:{port}`)
