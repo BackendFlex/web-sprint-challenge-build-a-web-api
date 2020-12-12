@@ -3,7 +3,7 @@
 const express = require("express");
 const router = express.Router();
 
-const actionDb = require("../actions/actions-model");
+const actionsDb = require("../actions/actions-model");
 const db = require("./projects-model");
 const { route } = require("../")
 
